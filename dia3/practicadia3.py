@@ -36,7 +36,6 @@ else:
     print("Has fallado")
 #-----------------------------------------------------------------------------------------------
 Juego por puntuacion
-"""
 print("Bienvenido al juego de Minecraft")
 print("Responde correctamente para ganar")
 
@@ -109,3 +108,34 @@ elif puntuacion <= 30:
 
 else:
     print("Felicidades! Eres experto")
+#---------------------------------------------------------------------------------
+#conversor
+#dolar a euro/ euro a dolar / de libra a euro / de euro a libra
+print("=== CONVERSOR DE MONEDAS ===")
+
+print("1 - Dolar a Euro")
+print("2 - Euro a Dolar")
+print("3 - Libra a Euro")
+print("4 - Euro a Libra")
+
+opcion = input("Seleccione una opcion: ")
+
+if opcion == "1":
+    cantidad = float(input("Ingrese dolares: "))
+    print("Euros:", cantidad * 0.86)
+
+elif opcion == "2":
+    cantidad = float(input("Ingrese euros: "))
+    print("Dolares:", cantidad * 1.16)
+
+elif opcion == "3":
+    cantidad = float(input("Ingrese libras: "))
+    print("Euros:", cantidad * 1.15)
+
+elif opcion == "4":
+    cantidad = float(input("Ingrese euros: "))
+    print("Libras:", cantidad * 0.87)
+
+else:
+    print("Opcion invalida")
+"""
