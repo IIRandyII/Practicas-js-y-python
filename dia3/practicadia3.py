@@ -138,4 +138,39 @@ elif opcion == "4":
 
 else:
     print("Opcion invalida")
+#------------------------------------------------------------------------------------------------
+# Árbol de decisiones IOS / Android
+
+sistema = input("IOS o Android: ").upper()
+
+if sistema == "ANDROID":
+
+    dinero = input("¿Tienes dinero? S/N: ").upper()
+
+    if dinero == "S":
+
+        camara = input("¿Te importa la cámara? S/N: ").upper()
+
+        if camara == "S":
+            print("Google Pixel")
+
+        else:
+            print("Android calidad-precio")
+
+    else:
+        print("Android económico")
+
+elif sistema == "IOS":
+
+    dinero = input("¿Tienes mucho dinero? S/N: ").upper()
+
+    if dinero == "S":
+        print("iPhone Pro")
+
+    else:
+        print("iPhone usado o antiguo")
+
+else:
+    print("Opción inválida")
+#------------------------------------------------------------------------------------------------
 """
