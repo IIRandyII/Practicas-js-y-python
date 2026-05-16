@@ -35,7 +35,77 @@ if (user == numero_aleatorio):
 else:
     print("Has fallado")
 #-----------------------------------------------------------------------------------------------
+Juego por puntuacion
 """
+print("Bienvenido al juego de Minecraft")
+print("Responde correctamente para ganar")
 
+puntuacion = 0
 
+opcion1 = input(
+    "Pregunta 1 : ¿Que pasa si matas a un animal con una espada con aspecto ígneo?\n"
+    "A - no pasa nada\n"
+    "B - te dropea el item\n"
+    "C - te dropea el item cocinado\n"
+)
 
+if opcion1 == "A":
+    puntuacion += 0
+
+elif opcion1 == "B":
+    puntuacion += 10
+
+elif opcion1 == "C":
+    puntuacion += 15
+
+else:
+    print("Las opciones son solo A, B y C")
+
+opcion2 = input(
+    "Pregunta 2 : ¿Que se necesita para craftear una espada de madera?\n"
+    "A - Nada\n"
+    "B - 1 de madera y 1 palo\n"
+    "C - 2 de madera, y 1 palo\n"
+)
+
+if opcion2 == "A":
+    puntuacion += 0
+
+elif opcion2 == "B":
+    puntuacion += 10
+
+elif opcion2 == "C":
+    puntuacion += 15
+
+else:
+    print("Las opciones son solo A, B y C")
+
+opcion3 = input(
+    "Pregunta 3 : ¿Que item se ocupa para encontrar al end portal?\n"
+    "A - ojos de araña\n"
+    "B - blaze\n"
+    "C - ojos de enderman\n"
+)
+
+if opcion3 == "A":
+    puntuacion += 0
+    
+elif opcion3 == "B":
+    puntuacion += 10
+
+elif opcion3 == "C":
+    puntuacion += 15
+
+else:
+    print("Las opciones son solo A, B y C")
+
+print("Tu puntuacion final es: ", puntuacion)
+
+if puntuacion <= 24:
+    print("Que lastima, estas en nivel basico")
+
+elif puntuacion <= 30:
+    print("Enhorabuena, estas nivel medio")
+
+else:
+    print("Felicidades! Eres experto")
